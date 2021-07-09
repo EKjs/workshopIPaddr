@@ -32,6 +32,10 @@ export default function CountryInfo({country}) {
       )
       return (<>
         <Skeleton variant="text" />
-        <Skeleton variant="rect" width={210} height={118} />
+        <Skeleton variant="text" />
+        <Skeleton variant="text" />
+        <Skeleton variant="text" />
+        <Skeleton variant="text" />
+        <Skeleton variant="text" />
       </>)
 }

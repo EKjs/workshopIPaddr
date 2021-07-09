@@ -30,7 +30,23 @@ export default function App() {
     getIpData();
   },[getIpData]);
 
-  if (!ip)return <Skeleton variant="text" />
+  if (!ip) return (<>
+      <div className="container bg-dark text-light ">
+      <div className="row">
+        <div className="col">
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+          <Skeleton variant="text" />
+        </div>
+        <div className="col">
+          <Skeleton variant="rect" width={400} height={150} />
+        </div>
+      </div>
+      </div>
+      </>)
 
   return (
     <div className="container bg-dark text-light ">
